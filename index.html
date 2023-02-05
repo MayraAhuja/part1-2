@@ -1,0 +1,64 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="backgroundNew.png">
+        <center>
+            <div class="heading">
+                <h1>AI Mario Pro</h1>
+            
+                <button class="btn btn-warning" data-toggle="modal" data-target="#popupid" >Instructions</button>
+              </div>
+              <br>
+              <br>
+              <button class="btn btn-success play" onclick="startGame()">Play</button>
+              <h3 id="status"></h3>
+              <br>
+              <br>
+              <div id="canvasDIV"></div>
+              <br>
+              <button id="restart" class="btn btn-primary" ondblclick="restart()">Restart</button>
+              <h4 id="footer">
+                Source code: 
+                <a href="https://kewaldshah.github.io/" target="_blank">kewaldshah</a>
+                <br>
+              </h4>
+
+
+
+
+
+              <div id="popupid" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&timesb;</button>
+                      <h3> Instructions</h3>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>in1</li>
+                            <li>in2</li>
+                            <li>in3</li>
+                          </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </center> 
+
+        <script src="main.js"></script>
+    </body>
+</html>
